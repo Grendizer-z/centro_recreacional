@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(27, 27, 170);
+    height: 100px;
+}
+
+main{
+    background-color: aliceblue;
+}
+
+.seccion-demografica{
+    background-color: #EEEFFA;
+    height: 583px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(27, 27, 170);
+    height: 100px;
+}
+
+#banner_centro{
+    width: 100%;
+}
+
+.caja-texto{
+    text-align: center;
+    font-size: large;
+    background-color: #4CB34C;
+}
+
+.texto-demo{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.caja-demo{
+    position: relative;
+    margin: 4em;
+}
+
+.imagenes-demo{
+    margin: 0 auto;
+    bottom: 0%;
+}
