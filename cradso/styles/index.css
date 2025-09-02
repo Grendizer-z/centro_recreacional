@@ -53,3 +53,30 @@ footer{
     margin: 0 auto;
     bottom: 0%;
 }
+
+#imagen-restaurante{
+    width: 100%;
+}
+
+#seccion-eventos{
+    background-color: #EEEFFA;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-eventos{
+    background-color: #3B21D0;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#fecha{
+    background-color: #EEEFFA;
+    padding: 1em;
+    text-align: center;
+}
+
