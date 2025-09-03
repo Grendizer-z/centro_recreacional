@@ -6,6 +6,65 @@ body{
 header{
     background-color: rgb(27, 27, 170);
     height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+menu-header{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+li{
+    color: white;
+    padding: 10px;
+}
+
+.links-nav{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 3cm;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+#botones-header{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    margin: 11px;
+}
+
+.login-reg{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    font-family:'Lucida Sans';
+    font-size: 16px;
+    font-weight: bold;
 }
 
 main{
@@ -45,7 +104,7 @@ footer{
 }
 
 .caja-demo{
-    position: relative;
+
     margin: 4em;
 }
 
@@ -80,3 +139,10 @@ footer{
     text-align: center;
 }
 
+#imagen-gimnasio{
+    width: 100%;
+}
+
+#imagen-mapa{
+    width: 100%;
+}
