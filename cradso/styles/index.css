@@ -126,6 +126,42 @@ footer{
     align-items: center;
 }
 
+#calendario{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 30%;
+    margin: 1em;
+    padding: 1em;
+}
+
+#header-calendario{
+    background-color: #3B21D0;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#dias-semana{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.dia-semana{
+    width: 2em;
+    text-align: center;
+}
+
+#dias-mes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: space-around;
+}
+
 #header-eventos{
     background-color: #3B21D0;
     color: white;
