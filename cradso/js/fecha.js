@@ -11,8 +11,8 @@ let jueves = document.getElementById("Jueves");
 let viernes = document.getElementById("Viernes");
 let sabado = document.getElementById("Sabado");
 let domingo = document.getElementById("Domingo");
-document.getElementById("fecha").innerHTML = fecha.toDateString();
-document.getElementById("header-calendario").innerHTML = fecha.toLocaleString('es-ES', { month: 'long' }) + " " + anio;
+document.getElementById("texto-fecha").innerHTML = fecha.toDateString();
+document.getElementById("titulo-calendario").innerHTML = fecha.toLocaleString('es-ES', { month: 'long' }) + " " + anio;
 for (let i=0; i<=5; i++){
     for (let j=0; j<=6; j++){
         let diaMes = document.createElement("div");

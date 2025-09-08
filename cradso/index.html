@@ -14,7 +14,7 @@
                 <img id="logo-header-img" src="imagenes/Logo.png" alt="Logo">
             </div>
             <div id="menu-header">
-                <ul>
+                <ul id="lista-menu">
                     <li><a class="links-nav" href="#entradas">ENTRADAS</a></li>
                     <li><a class="links-nav" href="#servicios">SERVICIOS</a></li>
                     <li><a class="links-nav" href="#ubicacion">UBICACIÓN</a></li>
@@ -30,7 +30,8 @@
                 <img id="banner_centro" src="imagenes/sección-banner-adso.png" alt="centro-recreacional">
             </div>
             <div class="seccion-demografica">
-                <div class="ninos">
+                <div class="limite">.</div>
+                <div class="supcaja-demo">
                     <div class="caja-demo">
                         <img class="imagenes-demo" src="imagenes/ninos.png" alt="niños">
                         <div class="caja-texto">
@@ -38,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="adolecentes">
+                <div class="supcaja-demo">
                     <div class="caja-demo">
                         <img class="imagenes-demo" src="imagenes/adolecentes.png" alt="adolecentes">
                         <div class="caja-texto">
@@ -46,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="adultos">
+                <div class="supcaja-demo">
                     <div class="caja-demo">
                         <img class="imagenes-demo" src="imagenes/adultos.png" alt="adultos">
                         <div class="caja-texto">
@@ -54,21 +55,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="limite">.</div>
             </div>
             <div id="restaurante">
                 <img id="imagen-restaurante" src="imagenes/restaurante.png" alt="restaurante">
+
             </div>
             <div id="seccion-eventos">
                 <div id="calendario">
-                    <div id="header-calendario">Mes-año</div>
+                    <div id="header-calendario"><h2 id="titulo-calendario">Mes-año</h2></div>
                     <div id="dias-semana">
-                        <div class="dia-semana">Lunes</div>
-                        <div class="dia-semana">Martes</div>
-                        <div class="dia-semana">Miércoles</div>
-                        <div class="dia-semana">Jueves</div>
-                        <div class="dia-semana">Viernes</div>
-                        <div class="dia-semana">Sábado</div>
-                        <div class="dia-semana">Domingo</div>
+                        <div class="dia-semana">Lu</div>
+                        <div class="dia-semana">Ma</div>
+                        <div class="dia-semana">Mi</div>
+                        <div class="dia-semana">Ju</div>
+                        <div class="dia-semana">Vi</div>
+                        <div class="dia-semana">Sá</div>
+                        <div class="dia-semana">Do</div>
                     </div>
                     <div id="dias-mes">
                         <div class="fila-dia" id="Lunes">
@@ -88,8 +91,8 @@
                     </div>
                 </div>
                 <div id="caja-eventos">
-                    <div id="header-eventos">EVENTO</div>
-                    <div id="fecha"></div>
+                    <div id="header-eventos"><h4 id="titulo-evento">EVENTO</h4></div>
+                    <div id="fecha"><h3 id="texto-fecha"></h3></div>
                     <div id="cuerpo-eventos">
                         <img id="imagen-evento" src="imagenes/evento.png" alt="evento">
                     </div>
@@ -102,7 +105,45 @@
                 <img id="imagen-mapa" src="imagenes/mapa.png" alt="mapa">
             </div>
         </main>
-        <footer><div class="">hh</div></footer>
+        <footer>
+            <div id="datos-footer">
+                <div class="dato-footer">
+                    <h3 class="titulo-dato">CONTACTOS</h3>
+                    <ul class="lista-datos">
+                        <li>Horario: Lunes a Viernes 8am - 5pm</li>
+                        <li>Email: direccion@example.com</li>
+                        <li>Tel: +57 123 456 7890</li>
+                        <li>Pol: En construcción</li>
+                    </ul>
+                </div>
+                <div class="separadordata-footer">.</div>
+                <div class="dato-footer">
+                    <h3 class="titulo-dato">MISION</h3>
+                    <ul class="lista-datos">
+                        <li>lo que nos mueve</li>
+                        <li>sostenibilidad</li>
+                        <li>quiénes somos</li>
+                        <li>compromiso</li>
+                    </ul>
+                </div>
+                <div class="separadordata-footer">.</div>
+                <div class="dato-footer">
+                    <h3 class="titulo-dato">FAQS</h3>
+                    <ul class="lista-datos">
+                        <li>comida y bebidas</li>
+                        <li>mascotas</li>
+                        <li>primeros auxilios</li>
+                        <li>atracciones</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="linea">.</div>
+            <div id="redes-sociales">
+                <div id="texto-redes"><h3 id="titulo-redes">Redes Sociales</h3></div>
+                <img id="redes-imagen" src="imagenes/redes.png" alt="redes-sociales">
+                <img id="logo-footer" src="imagenes/Logo.png" alt="logo-footer">
+            </div>
+        </footer>
         <script src="js/fecha.js"></script>
     </body>
 </html>

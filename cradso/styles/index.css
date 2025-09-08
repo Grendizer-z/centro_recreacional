@@ -4,14 +4,15 @@ body{
 }
 
 header{
-    background-color: rgb(27, 27, 170);
-    height: 100px;
+    background-color: #282AB2;
+    height: 110px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
 menu-header{
@@ -21,7 +22,7 @@ menu-header{
     justify-content: space-around;
 }
 
-ul{
+#lista-menu{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -59,12 +60,13 @@ li{
     align-items: center;
     justify-content: space-around;
     color: white;
-    background-color: green;
+    background-color: rgb(0, 128, 0);
     padding: 10px;
     border-radius: 5px;
     font-family:'Lucida Sans';
     font-size: 16px;
     font-weight: bold;
+    width: 150px;
 }
 
 main{
@@ -77,11 +79,59 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0em;
 }
 
 footer{
-    background-color: rgb(27, 27, 170);
-    height: 100px;
+    background-color: #282AB2;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#datos-footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo-dato{
+    font-family: Arial;
+}
+
+.lista-datos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.95em;
+    font-family: Arial;
+}
+
+.separadordata-footer{
+    width: 50px;
+    color: transparent;
+}
+
+#linea{
+    background-color: rgb(77, 55, 206);
+    height: 100%;
+    width: 0.05%;
+}
+
+#redes-sociales{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#titulo-redes{
+    font-family: Arial;
+    color: white;
 }
 
 #banner_centro{
@@ -103,8 +153,11 @@ footer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.caja-demo{
+.supcaja-demo{
+    margin: 0;
+}
 
+.caja-demo{
     margin: 4em;
 }
 
@@ -113,24 +166,31 @@ footer{
     bottom: 0%;
 }
 
+.limite{
+    color: transparent;
+    width: 5%;
+}
+
 #imagen-restaurante{
     width: 100%;
 }
 
 #seccion-eventos{
     background-color: #EEEFFA;
-    padding: 1em;
-    text-align: center;
+    height: 583px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
 #calendario{
+    position: relative;
+    left: 77px;
     background-color: white;
     border: 2px solid black;
     border-radius: 15px;
-    width: 30%;
+    width: 35%;
+    height: 80%;
     margin: 1em;
     padding: 1em;
 }
@@ -143,16 +203,32 @@ footer{
     border-radius: 10px;
 }
 
+#titulo-evento{
+    font-family: Arial;
+    height: 3%;
+}
+
+#titulo-calendario{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #dias-semana{
     display: flex;
     justify-content: space-around;
     font-weight: bold;
     margin-bottom: 1em;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5em;
 }
 
 .dia-semana{
     width: 2em;
     text-align: center;
+    font-size: 1.2em;
+    color: #3B21D0;
+    font-weight: bold;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-transform: uppercase;
 }
 
 #dias-mes{
@@ -162,17 +238,39 @@ footer{
     justify-content: space-around;
 }
 
+.dia-mes{
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+#caja-eventos{
+    margin: 0;
+    position: relative;
+    right: 100px;
+}
+
 #header-eventos{
     background-color: #3B21D0;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
 }
 
 #fecha{
-    background-color: #EEEFFA;
+    background-color: #262f96;
     padding: 1em;
     text-align: center;
+}
+
+#texto-fecha{
+    font-family: Arial;
+    color: white;
+    height: 10px;
 }
 
 #imagen-gimnasio{
