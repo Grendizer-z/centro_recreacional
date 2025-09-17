@@ -177,6 +177,11 @@ main{
     width: 100%;
 }
 
+#base-arcade{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .distancia{
     position: relative;
     top: 1px;
