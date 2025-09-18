@@ -193,17 +193,22 @@ main{
 }
 
 #zona-arcade{
-    width: 100%;
+    width: 500px;
+    position: relative;
+    left: 142px;
+    top: 295px;
 }
 
 #start{
-    width: 100%;
+    width: 100%; position: relative;
+    left: 142px;
+    top: -220px;
 }
 
 #neogeo{
-    width: 100%;
+    width: 560px;
     position: relative;
-    top: 650px;
+    top: 260px;
 }
 
 #ultrascores{
@@ -211,15 +216,83 @@ main{
 }
 
 #stats{
-    width: 100%;
+    width: 450px;
+    position: relative;
+    top: -329px;
+    right: 3px;
+}
+
+#contenedor-score{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    top: 30px;
+}
+
+#contenedor-coin{
+    position: relative;
+    bottom: -45px;
 }
 
 #coin{
-    width: 100%;
+    width: 250px;
+    position: relative;
+    top: -250px;
+    left: 100px;
 }
 
 #ranura{
+    width: 250px;
+    position: relative;
+    top: -250px;
+    left: 100px;
+}
+
+#arcade-wall-div{
     width: 100%;
+}
+
+#arcade-wall-imagen{
+    width: 100%;
+}
+
+#seccion-games{
+    width: 100%;
+    padding: -25em;
+    height: 1090px;
+}
+
+#banner-game{
+    width: 100%;
+
+}
+
+#texto-games{
+    position: relative;
+    top:-1000px;
+    right: -50px;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    color: white;
+}
+
+#titulo-games{
+    position: relative;
+    text-align: center;
+    width: 3000px;
+    font-size: 78px;
+    font-family: arial;
+}
+
+#parrafo-games{
+    width: 3000px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    font-family: arial;
 }
 
 .distancia{

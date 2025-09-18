@@ -1,0 +1,224 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    background-color: #282AB2;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#logo-header{
+    margin: 0;
+    padding: 0;
+    width: 5%;
+}
+
+.logo{
+    width: 100%;
+    border-radius: 30%;
+}
+
+menu-header{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#lista-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+li{
+    color: white;
+    padding: 10px;
+}
+
+.links-nav{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 3cm;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+#botones-header{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    margin: 11px;
+}
+
+.login-reg{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(0, 128, 0);
+    padding: 10px;
+    border-radius: 5px;
+    font-family:'Lucida Sans';
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+}
+
+main{
+    background-color: aliceblue;
+    display: grid;
+}
+
+#seccion-ban{
+    display: grid;
+    position: relative;
+    top: 110px;
+    width: 100%;   
+    background-color: white;
+}
+
+#banner-adult{
+    width: 100%;
+}
+
+#texto-banner{
+    display: grid;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 75%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
+}
+
+#titulo-banner{
+    position: relative;
+    align-items: center;
+    font-size: 55px;
+    text-align: center;
+    right: 100px;
+}
+
+#parrafo-banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+    font-style: Arial;
+    text-align: center;
+    right: 100px;
+}
+
+#intro-descanso{
+    width: 100%;
+}
+
+#banner-intro-descanso{
+    width: 100%;
+}
+
+#seccion-descanso{
+    width: 100%;
+    height: 850px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+#descanso-opciones{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 125px;
+    right: 288px;
+    gap: 40px;
+}
+
+.descanso-opcion{
+    width: 100%;
+    height: 70%;
+    background-color: green;
+}
+
+.lectura{
+    width: 490px;
+}
+
+footer{
+    background-color: #282AB2;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#datos-footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo-dato{
+    font-family: Arial;
+}
+
+.lista-datos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.95em;
+    font-family: Arial;
+}
+
+.separadordata-footer{
+    width: 50px;
+    color: transparent;
+}
+
+#linea{
+    background-color: rgb(77, 55, 206);
+    height: 100%;
+    width: 0.05%;
+    position: relative;
+    right: -6.5%;
+}
+
+#redes-sociales{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#titulo-redes{
+    position: relative;
+    right: -90%;
+    font-family: Arial;
+    color: white;
+}
+
+#logo{
+    position: relative;
+    left: -10%;
+    width: 12%;
+    margin: 0;
+}
