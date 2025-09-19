@@ -160,6 +160,78 @@ main{
     width: 490px;
 }
 
+#seccion-cine{
+    width: 100%;
+}
+
+#cine-imagen{
+    width: 100%;
+}
+
+#texto-cine{
+    height: 0px;
+    display: grid;
+    color: white;
+    position: relative;
+    top: -1000px;
+    right: -568px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
+}
+
+#titulo-cine{
+    position: relative;
+    align-items: center;
+    font-size: 55px;
+    text-align: center;
+    right: 100px;
+}
+
+#parrafo-cine{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+    font-style: Arial;
+    text-align: center;
+    right: 100px;
+}
+
+#seccion-navegacion{
+    width: 100%;
+}
+
+#navegacion-imagen{
+    width: 100%;
+}
+
+#texto-navegacion{
+    height: 0px;
+    display: grid;
+    color: white;
+    position: relative;
+    top: -1000px;
+    left: -410px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
+}
+
+#titulo-navegacion{
+    position: relative;
+    align-items: center;
+    font-size: 55px;
+    text-align: center;
+    right: 100px;
+}
+
+#parrafo-navegacion{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+    font-style: Arial;
+    text-align: center;
+    right: 100px;
+}
+
 footer{
     background-color: #282AB2;
     height: 340px;
