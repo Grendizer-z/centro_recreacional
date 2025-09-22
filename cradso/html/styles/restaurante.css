@@ -4,7 +4,7 @@ body{
 }
 
 header{
-    background-color: #c75c04;
+    background-color: #dfc21d;
     height: 110px;
     width: 100%;
     display: flex;
@@ -24,6 +24,8 @@ header{
 .logo{
     width: 100%;
     border-radius: 30%;
+    position: relative;
+    left: 20px;
 }
 
 menu-header{
@@ -43,12 +45,12 @@ menu-header{
 }
 
 li{
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
 }
 
 .links-nav{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
     width: 3cm;
@@ -63,6 +65,8 @@ li{
     align-items: center;
     justify-content: space-around;
     margin: 11px;
+    position: relative;
+    right: 15px;
 }
 
 .login-reg{
@@ -71,13 +75,15 @@ li{
     align-items: center;
     justify-content: space-around;
     color: white;
-    background-color: rgb(0, 128, 0);
+    background-color: rgb(209, 78, 3);
     padding: 10px;
     border-radius: 5px;
     font-family:'Lucida Sans';
     font-size: 16px;
     font-weight: bold;
     width: 150px;
+    border: none;
+    height: 45px;
 }
 
 main{
@@ -101,7 +107,7 @@ main{
     position: relative;
     top: 100px;
     width: 100%;
-    background-color: #0d0b8c;
+    background-color: #a50a0a;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 832px;
@@ -114,11 +120,14 @@ main{
     width: 100%;
     position: relative;
     top: -200px;
-    left: 50px;
+    left: 160px;
 }
 
 #parrafo-intro{
     font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -347px;
 }
 
 #linea-intro{
@@ -132,15 +141,97 @@ main{
 #contenedor-food{
     width: 100%;
     position: relative;
-    top: 100px;
+    top: 207px;
+    right: 328px;
 }
 
 #imagen-food{
-    width: 65%;
+    width: 130%;
+}
+
+#seccion-chef{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #7C1517;
+    height: 650px;
+}
+
+#contenedor-chef{
+    width: 50%;
+    position: relative;
+    top: 330px;
+    left: 200px;
+}
+
+#imagen-chef{
+    width: 100%;
+}
+
+#texto-chef{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 300px;
+    right: 30px;
+}
+
+#parrafo-chef{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#seccion-menu{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #3F3B36;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#barra-superior-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#texto-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#formulario{
+    width: 100%;
+}
+
+#barra-busqueda[type="text"]{
+    width: 50%;
+    height: 43px;
+    font-size: 120%;
+    color: #616161d7;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+#boton-busqueda[type="submit"]{
+    width: 10%;
+    height: 43px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+#contenedor-menu{
+    background-color: #33302c;
 }
 
 footer{
-    background-color: #c75c04;
+    background-color: #dfc21d;
     height: 340px;
     width: 100%;
     display: flex;
@@ -149,7 +240,7 @@ footer{
 }
 
 #datos-footer{
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
 }
@@ -174,7 +265,7 @@ footer{
 }
 
 #linea{
-    background-color: #a14f2c;
+    background-color: #9fa12c;
     height: 100%;
     width: 0.05%;
     position: relative;
@@ -192,7 +283,7 @@ footer{
     position: relative;
     right: -90%;
     font-family: Arial;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #logo{
