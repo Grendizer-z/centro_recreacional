@@ -183,14 +183,19 @@ main{
 }
 
 #seccion-menu{
+    width: 100%;
+    height: 2010px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-color: #3F3B36;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    gap: 0%;
 }
 
 #barra-superior-menu{
+    width: 100%;
+    height: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -198,10 +203,22 @@ main{
 #texto-menu{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    display: grid;
+    justify-content: center;
+}
+
+#buscador{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
 }
 
 #formulario{
-    width: 100%;
+    width: 198%;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 #barra-busqueda[type="text"]{
@@ -215,7 +232,7 @@ main{
 }
 
 #boton-busqueda[type="submit"]{
-    width: 10%;
+    width: 25%;
     height: 43px;
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
@@ -227,7 +244,58 @@ main{
 }
 
 #contenedor-menu{
-    background-color: #33302c;
+    position: relative;
+    top: -110px;
+    display: grid;
+    
+}
+
+#cuadricula-menu{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3%;
+}
+
+.filas-menu{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+
+.carta-platillo{
+    width: 100%;
+    height: 600px;
+    background-color: #9b1111;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0%;
+}
+
+.contenedor-imagen-platillo{
+    width: 100%;
+    height: 86%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+.imagen-platillo{
+    position: relative;
+    top: 8%;
+    width: 82%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.titulo-platillo{
+    margin: 0 auto;
+}
+
+.precio{
+    margin: 0 auto;
 }
 
 footer{
