@@ -24,6 +24,8 @@ header{
 .logo{
     width: 100%;
     border-radius: 30%;
+    position: relative;
+    left: 20px;
 }
 
 menu-header{
@@ -78,6 +80,8 @@ li{
     font-size: 16px;
     font-weight: bold;
     width: 150px;
+    border: none;
+    height: 45px;
 }
 
 main{
