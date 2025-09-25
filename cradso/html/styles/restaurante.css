@@ -131,7 +131,7 @@ main{
 }
 
 #linea-intro{
-    background-color: #a14f2c;
+    background-color: transparent;
     height: 100%;
     width: 0.05%;
     position: relative;
