@@ -1,0 +1,198 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    background-color: #282AB2;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#logo-header{
+    margin: 0;
+    padding: 0;
+    width: 5%;
+}
+
+.logo{
+    width: 100%;
+    border-radius: 30%;
+    position: relative;
+    left: 20px;
+}
+
+#menu-header{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#lista-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+li{
+    color: white;
+    padding: 10px;
+}
+
+.links-nav{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 3cm;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+#botones-header{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    margin: 11px;
+}
+
+.login-reg{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(0, 128, 0);
+    padding: 10px;
+    border-radius: 5px;
+    font-family:'Lucida Sans';
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    border: none;
+    height: 45px;
+}
+
+main{
+    position: relative;
+    top: 0.01%;
+    background-color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#seccion-ban{
+    display: grid;
+    position: relative;
+    top: 110px;
+    width: 100%;  
+    height: 86%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#banner-login{
+    width: 100%;
+    height: 65%;
+}
+
+#contenedor-form{
+    border-radius: 2%;
+    background-color: rgb(109, 109, 168);
+    width: 25%;
+    height: 700%;
+    position: relative;
+    top: -1540%;
+    left: 37%;
+}
+
+form{
+    position: relative;
+    top: 25%; 
+    left: 8%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 100%;
+    width: 83%;
+}
+
+.campo{
+    width: 100%;
+    height: 237%;
+}
+
+footer{
+    position: relative;
+    top: 21%;
+    background-color: #282AB2;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#datos-footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo-dato{
+    font-family: Arial;
+}
+
+.lista-datos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.95em;
+    font-family: Arial;
+}
+
+.separadordata-footer{
+    width: 50px;
+    color: transparent;
+}
+
+#linea{
+    background-color: rgb(77, 55, 206);
+    height: 100%;
+    width: 0.05%;
+    position: relative;
+    right: -6.5%;
+}
+
+#redes-sociales{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#titulo-redes{
+    position: relative;
+    right: -90%;
+    font-family: Arial;
+    color: white;
+}
+
+#logo{
+    position: relative;
+    left: -10%;
+    width: 12%;
+    margin: 0;
+}
