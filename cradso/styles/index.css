@@ -87,6 +87,10 @@ li{
     cursor: pointer;
 }
 
+input{
+    text-decoration: none;
+}
+
 main{
     background-color: aliceblue;
 }
