@@ -120,7 +120,7 @@ main{
 
 form{
     position: relative;
-    top: 12%; 
+    top: 10%; 
     left: 8%;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -135,22 +135,31 @@ form{
 
 input[type="email"]{
     position: relative;
-    top: 98%;
+    top: -218%;
 }
 
 input[type="email"]:invalid{
     border: 2px solid red;
 }
 
-#parrafo-login{
+input[type="number"]{
     position: relative;
-    top: 50%;
-    left: 25%;
+    top: -110%;
 }
 
-#recuperar-clave{
-    color: #3134d1;
-    font-weight: bold;
+input[type="password"]{
+    position: relative;
+    top: -328%;
+}
+
+#confirmador{
+    position: relative;
+    top: -438%;
+}
+
+#boton-reg{
+    position: relative;
+    top: -618%;
 }
 
 footer{

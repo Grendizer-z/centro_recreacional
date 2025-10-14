@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entradas</title>
+        <link rel="stylesheet" href="styles/entradas.css">
+        <meta charset="UTF8">
+    </head>
+    <body>
+        <main>
+            <img id="fondo" src="imagenes/Entradas.png">
+            <div id="contenedor-form">
+                <a href="../index.html"><img src="../imagenes/Logo.png" id="Logo"></a>
+                <form action="{{route(pagar.post)}}" method="POST">
+                    <input type="number" class="widgets" id="adultos" placeholder="Adultos">
+                    <input type="number" class="widgets" id="infantes" placeholder="Niños">
+                    <input type="submit" class="widgets" id="pagar" value="PAGAR">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

@@ -214,6 +214,35 @@ footer{
     margin: 0 auto;
     position: relative;
     bottom: -10%;
+    border-radius: 50%;
+}
+
+#ninos:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 2px 15px rgba(51, 54, 51, 0.473);
+    border-width: 23px;
+}
+
+#ninos:active{
+    transform: scale(1);
+}
+
+#adult:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 2px 15px rgba(51, 54, 51, 0.473);
+}
+
+#adult:active{
+    transform: scale(1);
+}
+
+#teen:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 2px 15px rgba(51, 54, 51, 0.473);
+}
+
+#teen:active{
+    transform: scale(1);
 }
 
 .limite{

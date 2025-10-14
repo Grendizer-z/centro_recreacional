@@ -218,6 +218,11 @@ main{
     top: 260px;
 }
 
+#neogeo:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
 #ultrascores{
     width: 100%;
 }
@@ -246,6 +251,11 @@ main{
     position: relative;
     top: -250px;
     left: 100px;
+}
+
+#coin:hover{
+    transform: translate(0px, 65px) rotate(-65deg);
+    transition-duration: 0.3s;
 }
 
 #ranura{
@@ -294,9 +304,8 @@ main{
 
 #parrafo-games{
     width: 3000px;
-    display: flex;
-    justify-content: center;
     position: relative;
+    left: 28%;
     text-align: center;
     font-size: 22px;
     font-family: arial;
