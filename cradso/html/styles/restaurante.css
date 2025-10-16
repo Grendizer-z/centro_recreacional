@@ -28,7 +28,7 @@ header{
     left: 20px;
 }
 
-menu-header{
+#menu-header{
     display: flex;
     gap: 1em;
     align-items: center;
@@ -36,6 +36,8 @@ menu-header{
 }
 
 #lista-menu{
+    position: relative;
+    top: 10%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -45,12 +47,19 @@ menu-header{
 }
 
 li{
-    color: rgb(0, 0, 0);
+    color: white;
     padding: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .links-nav{
-    color: rgb(0, 0, 0);
+    position: relative;
+    top: 46%;
+    color: white;
     text-decoration: none;
     padding: 10px;
     width: 3cm;
@@ -58,6 +67,21 @@ li{
     font-family: Arial, sans-serif;
     font-size: 20px;
 }
+
+#caja-opciones{
+    visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    list-style: none;
+    background-color: #a59019;
+}
+
+li:hover #caja-opciones{
+    visibility: visible;
+}
+
 
 #botones-header{
     display: flex;
