@@ -15,6 +15,14 @@ header{
     z-index: 1000;
 }
 
+#elementos-menu{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #logo-header{
     margin: 0;
     padding: 0;
@@ -28,7 +36,7 @@ header{
     left: 20px;
 }
 
-menu-header{
+#menu-header{
     display: flex;
     gap: 1em;
     align-items: center;
@@ -57,6 +65,8 @@ a{
 }
 
 .links-nav{
+    flex-grow: 1;
+    text-align: center;
     position: relative;
     top: 46%;
     color: white;
@@ -381,4 +391,38 @@ footer{
 
 #imagen-mapa{
     width: 100%;
+}
+
+@media (max-width: 600px){
+    .seccion-demografica, #seccion-eventos, #elementos-menu{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #logo-header, #botones-header, .login-reg{
+        display: none;
+    }
+
+    #lista-menu{
+        width: 80%;
+        position: relative;
+        top: -27%;
+    }
+
+    .links-nav{
+        font-size: 100%;
+    }
+
+    #ubicacion{
+        position: relative;
+        left: -40%;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    .seccionban, #banner_centro{
+        height: 100%;
+    }
 }

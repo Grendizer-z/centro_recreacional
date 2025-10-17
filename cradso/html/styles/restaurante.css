@@ -388,3 +388,9 @@ footer{
     width: 12%;
     margin: 0;
 }
+
+@media (max-width: 768px){
+    *{
+        display: block;
+    }
+}
