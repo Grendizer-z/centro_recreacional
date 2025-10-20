@@ -128,6 +128,14 @@ main{
     background-color: aliceblue;
 }
 
+.seccionban{
+    display: grid;
+    position: relative;
+    top: 110px;
+    width: 100%;   
+    background-color: white;
+}
+
 .seccion-demografica{
     background-color: #EEEFFA;
     height: 583px;
@@ -300,7 +308,7 @@ footer{
     left: 77px;
     background-color: white;
     border: 2px solid black;
-    border-radius: 15px;
+    border-radius: 2%;
     width: 35%;
     height: 80%;
     margin: 1em;
@@ -312,7 +320,7 @@ footer{
     color: white;
     padding: 1em;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 #titulo-evento{
@@ -393,8 +401,8 @@ footer{
     width: 100%;
 }
 
-@media (max-width: 600px){
-    .seccion-demografica, #seccion-eventos, #elementos-menu{
+@media (max-width: 480px){
+    .seccion-demografica, #seccion-eventos, #elementos-menu, footer{
         flex-direction: column;
         height: 100%;
     }
@@ -410,19 +418,100 @@ footer{
     }
 
     .links-nav{
-        font-size: 100%;
+        font-size: 95%;
     }
 
     #ubicacion{
         position: relative;
-        left: -40%;
+        left: -80%;
     }
 
     header{
         height: 100px;
     }
 
-    .seccionban, #banner_centro{
-        height: 100%;
+    #calendario, #caja-eventos{
+        width: 80%;
+        height: 360px;
+        position: relative;
+        left: 0%;
+    }
+
+    #imagen-evento{
+        width: 100%;
+    }
+
+    #datos-footer{
+        width: 80%;
+        position: relative;
+        left: -3%;
+    }
+
+    #linea{
+        width: 100%;
+        height: 1px;
+        position: relative;
+        left: 0%;
+        padding: -100%;
+    }
+
+    #redes-imagen{
+        width: 50%;
+        position: relative;
+        left: 6%;
+    }
+
+    #redes-sociales{
+        position: relative;
+        left: -10%;
+    }
+
+    #titulo-redes{
+        font-size: 95%;
+        position: relative;
+        left: 44%;
+    }
+
+    #logo{
+        position: relative;
+        left: 5.7%;
+    }
+
+    #entradas{
+        position: relative;
+        left: 34%;
+    }
+
+    .imagenes-demo{
+        width: 130%;
+        height: 60%;
+        left: -15%;
+    }
+
+    .caja-texto{
+        width: 148%;
+        position: relative;
+        left: -24%;
+    }
+
+    .supcaja-demo{
+        position: relative;
+        top: 60px;
+    }
+
+    .dia-mes{
+        font-size: 75.01%;
+    }
+
+    #header-calendario{
+        width: 97%;
+        height: 7%;
+        position: relative;
+        left: -4%;
+    }
+
+    #titulo-calendario{
+        position: relative;
+        top: -93%;
     }
 }
