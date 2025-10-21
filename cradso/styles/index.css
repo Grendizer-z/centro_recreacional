@@ -15,6 +15,17 @@ header{
     z-index: 1000;
 }
 
+aside{
+    background-color: #333a8fee;
+    height: 100%;
+    width: 80%;
+    position: fixed;
+}
+
+#barra-lateral{
+    display: none;
+}
+
 #elementos-menu{
     height: 110px;
     width: 100%;
@@ -138,11 +149,26 @@ main{
 
 .seccion-demografica{
     background-color: #EEEFFA;
-    height: 583px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0em;
+}
+
+.supcaja-demo{
+    position: relative;
+    top: 10%;
+    width: 90%;
+}
+
+.imagenes-demo{
+    width: 91%;
+    left: 0%;
+}
+
+.caja-texto{
+    width: 91%;
 }
 
 footer{
@@ -402,6 +428,8 @@ footer{
 }
 
 @media (max-width: 480px){
+    
+
     .seccion-demografica, #seccion-eventos, #elementos-menu, footer{
         flex-direction: column;
         height: 100%;
@@ -442,9 +470,21 @@ footer{
     }
 
     #datos-footer{
-        width: 80%;
+        width: 0%;
         position: relative;
-        left: -3%;
+        left: -54%;
+    }
+
+    .titulo-dato{
+        font-size: 110%;
+        position: relative;
+        left: 23%;
+    }
+
+    .dato{
+        font-size: 80%;
+        position: relative;
+        left: 20%;
     }
 
     #linea{
@@ -483,13 +523,13 @@ footer{
     }
 
     .imagenes-demo{
-        width: 130%;
+        width: 138%;
         height: 60%;
-        left: -15%;
+        left: -19%;
     }
 
     .caja-texto{
-        width: 148%;
+        width: 146%;
         position: relative;
         left: -24%;
     }
@@ -514,4 +554,26 @@ footer{
         position: relative;
         top: -93%;
     }
+
+    #barra-lateral{
+        display: block;
+    }
+
+    #check-menu:checked ~ .aside-bar{
+        display: block;
+    }
+
+    .logo-menu-lateral, .logo-lateral{
+        width: 370%;
+        cursor: pointer;
+    }
+
+    aside{
+        display: none;
+    }
+
+    #barra-lateral:focus > aside{
+        display: block;
+    }
+
 }
