@@ -444,7 +444,11 @@ footer{
 
     #botones-menu-lateral{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8%;
+        position: relative;
+        top: 10px;
+        left: 25%;
     }
     
     #texto_logo{
@@ -475,9 +479,9 @@ footer{
         font-size: 95%;
     }
 
-    #ubicacion{
+    #ubicacion-aside{
         position: relative;
-        left: -70%;
+        top: -40px;
     }
 
     header{
@@ -545,13 +549,12 @@ footer{
 
     #entradas-aside{
         position: relative;
-        left: 44%;
     }
 
     #service-aside{
         cursor: pointer;
         position: relative;
-        left: 0%;
+        top: -30px;
     }
 
     .imagenes-demo{
@@ -562,6 +565,7 @@ footer{
 
     .caja-texto{
         width: 146%;
+        height: 55px;
         position: relative;
         left: -24%;
     }
@@ -569,6 +573,11 @@ footer{
     .supcaja-demo{
         position: relative;
         top: 60px;
+    }
+
+    .texto-demo{
+        position: relative;
+        bottom: 40%;
     }
 
     .dia-mes{
@@ -617,6 +626,9 @@ footer{
 
     #caja-opciones-aside{
         list-style: none;
+        position: relative;
+        top: -40px;
+        left: 10%;
     }
 
     #check-service{
@@ -626,5 +638,23 @@ footer{
 
     #check-service:checked ~ #caja-opciones-aside{
         display: block;
+    }
+
+    .login-reg-lateral{
+        position: relative;
+        right: 30%;
+        width: 80%;
+        font-size: 90%;
+    }
+
+    #logo-aside{
+        width: 50%;
+        position: relative;
+        left: 18%;
+    }
+
+    .links-nav-aside{
+        position: relative;
+        left: 24%;
     }
 }
