@@ -28,7 +28,7 @@ header{
     left: 20px;
 }
 
-menu-header{
+.menu-header{
     display: flex;
     gap: 1em;
     align-items: center;
@@ -127,29 +127,32 @@ main{
 }
 
 #texto-banner{
+    width: 500px;
     color: white;
     position: absolute;
-    top: 15%;
-    left: 75%;
+    top: 10%;
+    left: 17%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
 }
 
 #titulo-banner{
+    width: 500px;
     position: relative;
     align-items: center;
     font-size: 55px;
     text-align: center;
-    right: 100px;
+    right: -1000px;
 }
 
 #parrafo-banner{
+    width: 500px;
     display: flex;
     justify-content: center;
     position: relative;
     font-size: 33px;
     font-style: Arial;
     text-align: center;
-    right: 100px;
+    right: -1000px;
 }
 
 #guarderia{
@@ -166,29 +169,33 @@ main{
 }
 
 #texto-guarderia{
+    width: 500px;
     color: rgb(255, 255, 255);
     position: relative;
     top: -800px;
-    left: -385px;
+    left: -780px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
 }
 
 #titulo-guarderia{
+    width: 500px;
     position: relative;
     align-items: center;
     font-size: 75px;
     text-align: center;
-    right: 95px;
+    right: -1000px;
 }
 
 #parrafo-guarderia{
+    width: 500px;
     display: flex;
     justify-content: center;
     position: relative;
-    font-size: 47px;
+    top: -20px;
+    font-size: 37px;
     font-style: Arial;
     text-align: center;
-    right: 100px;
+    right: -1000px;
 }
 
 #seccion-fun{
@@ -201,29 +208,32 @@ main{
 }
 
 #texto-fun{
+    width: 500px;
     color: rgb(255, 255, 255);
     position: relative;
     top: -850px;
-    left: 559.5px;
+    left: 200.5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
 }
 
 #titulo-fun{
+    width: 500px;
     position: relative;
     align-items: center;
     font-size: 50px;
     text-align: center;
-    right: 95px;
+    right: -1000px;
 }
 
 #parrafo-fun{
+    width: 500px;
     display: flex;
     justify-content: center;
     position: relative;
-    font-size: 40px;
+    font-size: 27px;
     font-style: Arial;
     text-align: center;
-    right: 100px;
+    right: -1000px;
 }
 
 #seccion-animal{
@@ -236,29 +246,32 @@ main{
 }
 
 #texto-animal{
+    width: 500px;
     color: rgb(255, 255, 255);
     position: relative;
     top: -850px;
-    left: -400px;
+    left: -800px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
 }
 
 #titulo-animal{
+    width: 500px;
     position: relative;
     align-items: center;
     font-size: 50px;
     text-align: center;
-    right: 95px;
+    right: -1000px;
 }
 
 #parrafo-animal{
+    width: 500px;
     display: flex;
     justify-content: center;
     position: relative;
-    font-size: 40px;
+    font-size: 29.399px;
     font-style: Arial;
     text-align: center;
-    right: 100px;
+    right: -1000px;
 }
 
 .distancia{

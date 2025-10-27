@@ -127,10 +127,11 @@ main{
 }
 
 #texto-banner{
+    background-color: red;
     color: white;
     position: absolute;
     top: 15%;
-    left: 75%;
+    left: 60%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
 }
 
