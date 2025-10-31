@@ -417,10 +417,24 @@ footer{
 }
 
 @media (max-width: 480px){
-    #introduccion, #seccion-chef{
+    #introduccion, #seccion-chef, #barra-superior-menu, .filas-menu{
         overflow: hidden;
         grid-template-columns: 1fr;
         height: 100%;
+    }
+
+    #barra-superior-menu{
+        height: 20%;
+        background-color: red;
+    }
+
+    #seccion-menu{
+        overflow: scroll;
+        height: 100%;
+    }
+
+    #cuadricula-menu{
+        background-color: blue;
     }
 
     #texto-intro{
