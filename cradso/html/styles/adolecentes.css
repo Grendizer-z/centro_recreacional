@@ -116,6 +116,7 @@ main{
 }
 
 #seccion-ban{
+    overflow: hidden;
     position: relative;
     top: 110px;
     width: 100%;   
@@ -127,11 +128,10 @@ main{
 }
 
 #texto-banner{
-    background-color: red;
     color: white;
     position: absolute;
     top: 15%;
-    left: 60%;
+    left: 74%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
 }
 
@@ -299,6 +299,7 @@ main{
 }
 
 #seccion-games{
+    overflow: hidden;
     width: 100%;
     padding: -25em;
     height: 1090px;

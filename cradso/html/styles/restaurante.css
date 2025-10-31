@@ -15,6 +15,29 @@ header{
     z-index: 1000;
 }
 
+#texto_logo{
+    display: none;
+}
+
+.aside-bar{
+    background-color: #d6a621ee;
+    height: 100%;
+    width: 80%;
+    position: fixed;
+}
+
+#barra-lateral{
+    display: none;
+}
+
+#elementos-menu{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #logo-header{
     margin: 0;
     padding: 0;
@@ -78,6 +101,10 @@ a{
     background-color: #a59019;
 }
 
+#caja-opciones-aside{
+    display: none;
+}
+
 li:hover #caja-opciones{
     visibility: visible;
 }
@@ -93,7 +120,7 @@ li:hover #caja-opciones{
     right: 15px;
 }
 
-.login-reg{
+.login-reg, .login-reg-lateral{
     display: flex;
     gap: 1em;
     align-items: center;
@@ -389,8 +416,214 @@ footer{
     margin: 0;
 }
 
-@media (max-width: 768px){
-    *{
+@media (max-width: 480px){
+    #introduccion, #seccion-chef{
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    #texto-intro{
+        width: 20%;
+        height: 50%;
+        position: relative;
+        left: 4.7%;
+        top: 10%;
+    }
+
+    #parrafo-intro{
+        width: 250%;
+        font-size: 140%;
+        position: relative;
+        top: -22%;
+    }
+
+    #contenedor-food{
+        position: relative;
+        top: -50%;
+        left: 4.6%;
+    }
+
+    #imagen-food{
+        width: 90%;
+    }
+
+    #contenedor-chef{
+        width: 100%;
+        position: relative;
+        top: 116%;
+        left: 4%;
+    }
+
+    #botones-menu-lateral{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8%;
+        position: relative;
+        top: 10px;
+        left: 25%;
+    }
+
+    #seccion-ban{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #texto_logo{
+        display: block;
+        width: 50%;
+        position: relative;
+        left: 28%;
+    }
+
+    footer{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #logo-header, #botones-header, .login-reg{
+        display: none;
+    }
+
+    #elementos-menu{
+        display: none;
+    }
+
+    #lista-menu-aside{
+        list-style: none;
+    }
+
+    .links-nav{
+        font-size: 95%;
+    }
+
+    #ubicacion-aside{
+        position: relative;
+        top: -40px;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    #datos-footer{
+        width: 0%;
+        position: relative;
+        left: -54%;
+    }
+
+    .titulo-dato{
+        font-size: 110%;
+        position: relative;
+        left: 23%;
+    }
+
+    .dato{
+        font-size: 80%;
+        position: relative;
+        left: 20%;
+    }
+
+    #linea{
+        width: 100%;
+        height: 1px;
+        position: relative;
+        left: 0%;
+        padding: -100%;
+    }
+
+    #redes-imagen{
+        width: 50%;
+        position: relative;
+        left: 3%;
+    }
+
+    #redes-sociales{
+        position: relative;
+        left: -10%;
+    }
+
+    #titulo-redes{
+        font-size: 95%;
+        position: relative;
+        left: 44%;
+    }
+
+    #logo{
+        position: relative;
+        left: 5.7%;
+    }
+
+    #entradas-aside{
+        position: relative;
+    }
+
+    #service-aside{
+        cursor: pointer;
+        position: relative;
+        top: -30px;
+    }
+
+    #barra-lateral{
+        display: block;
+        position: fixed;
+        left: -5%;
+        top: 3%;
+        z-index: 1002;
+    }
+
+    #check-menu:checked ~ .aside-bar{
         display: block;
     }
+
+    .logo-menu-lateral, .logo-lateral{
+        width: 17%;
+        cursor: pointer;
+    }
+
+    .aside-bar{
+        display: none;
+        z-index: 999;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    #lista-log-aside{
+        list-style: none;
+    }
+
+    #caja-opciones-aside{
+        list-style: none;
+        position: relative;
+        top: -40px;
+        left: 10%;
+    }
+
+    #check-service{
+        position: relative;
+        visibility: hidden;
+    }
+
+    #check-service:checked ~ #caja-opciones-aside{
+        display: block;
+    }
+
+    .login-reg-lateral{
+        position: relative;
+        right: 30%;
+        width: 80%;
+        font-size: 90%;
+    }
+
+    #logo-aside{
+        width: 50%;
+        position: relative;
+        left: 18%;
+    }
+
+    .links-nav-aside{
+        position: relative;
+        left: 24%;
+    }
 }
+
