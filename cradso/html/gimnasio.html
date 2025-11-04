@@ -9,14 +9,52 @@
     </head>
     <body>
         <header>
+            <div id="barra-lateral">
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu" id="boton-menú">
+                    <img class="logo-lateral" src="../imagenes/aside.png" alt="Logo">
+                </label>
+                <aside class="aside-bar">
+                    <ul id="lista-menu-aside">
+                        <li id="elemento-home"><a href="../"><img id="logo-aside" src="../imagenes/Logo.png"></a></li>
+                        <li><a id="entradas-aside" class="links-nav-aside" href="entradas.html">ENTRADAS</a></li>
+                        <li>
+                            <input type="checkbox" id="check-service">
+                            <label for="check-service" id="label-service">
+                                <h4 class="links-nav-aside" id="service-aside">SERVICIOS</h4>
+                            </label>
+                            
+                            <ul id="caja-opciones-aside">
+                                <li><a href="seccion-infantil.html">niños</a></li>
+                                <li><a href="seccion-adolecentes.html">adolecentes</a></li>
+                                <li><a href="seccion-adultos.html">adultos</a></li>
+                                <li><a href="restaurante.html">restaurante</a></li>
+                                <li><a href="gimnasio.html">gimnasio</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="ubicacion-aside" class="links-nav-aside" href="https://www.google.com/maps/place/sena/@10.8955571,-72.8311197,17z/data=!3m1!4b1!4m6!3m5!1s0x8e8b0358baa9dbf5:0x9dbb29f802db2e51!8m2!3d10.8955571!4d-72.8285448!16s%2Fg%2F11j2g3nsdw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">UBICACIÓN</a></li>
+                    </ul>
+                    <ul id="menu-lateral">
+                        <ul id="lista-log-aside">
+                            <li>
+                                <div id="botones-menu-lateral">
+                                    <a href="registrarse.html"><input class="login-reg-lateral" id="" type="button" value="REGISTRARSE"></a>
+                                    <a href="login.html"><input class="login-reg-lateral" type="button" value="LOGIN"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </aside>
+            </div>
+            <div id="elementos-menu">
             <div id="logo-header">
-                <a href="../index.html"><img class="logo" src="../imagenes/Logo.png" alt="Logo"></a>
+                <img class="logo" src="../imagenes/Logo.png" alt="Logo">
             </div>
             <div id="menu-header">
                 <ul id="lista-menu">
-                    <li><a class="links-nav" href="entradas.html">ENTRADAS</a></li>
+                    <li><a id="entradas" class="links-nav" href="entradas.html">ENTRADAS</a></li>
                     <li>
-                        <a class="links-nav" href="#servicios">SERVICIOS</a>
+                        <a class="links-nav" id="service" href="#servicios">SERVICIOS</a>
                         <ul id="caja-opciones">
                             <li><a href="seccion-infantil.html">niños</a></li>
                             <li><a href="seccion-adolecentes.html">adolecentes</a></li>
@@ -25,13 +63,15 @@
                             <li><a href="gimnasio.html">gimnasio</a></li>
                         </ul>
                     </li>
-                    <li><a class="links-nav" href="https://www.google.com/maps/place/sena/@10.8955571,-72.8311197,17z/data=!3m1!4b1!4m6!3m5!1s0x8e8b0358baa9dbf5:0x9dbb29f802db2e51!8m2!3d10.8955571!4d-72.8285448!16s%2Fg%2F11j2g3nsdw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">UBICACIÓN</a></li>
+                    <li><a id="ubicacion" class="links-nav" href="https://www.google.com/maps/place/sena/@10.8955571,-72.8311197,17z/data=!3m1!4b1!4m6!3m5!1s0x8e8b0358baa9dbf5:0x9dbb29f802db2e51!8m2!3d10.8955571!4d-72.8285448!16s%2Fg%2F11j2g3nsdw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">UBICACIÓN</a></li>
                 </ul>
             </div>
             <div id="botones-header">
                 <a href="registrarse.html"><input class="login-reg" type="button" value="REGISTRARSE"></a>
                 <a href="login.html"><input class="login-reg" type="button" value="LOGIN"></a>
             </div>
+            </div>
+            <img id="texto_logo" src="../imagenes/texto_logo.png">
         </header>
         <main>
             <div id="seccion-ban">
