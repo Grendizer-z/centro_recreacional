@@ -138,7 +138,6 @@ li:hover #caja-opciones{
 
 main{
     background-color: aliceblue;
-    display: grid;
 }
 
 #seccion-ban{
@@ -413,31 +412,31 @@ footer{
 }
 
 @media (max-width: 480px){
-    #introduccion, #seccion-chef, #barra-superior-menu, .filas-menu{
+    #introduccion, #seccion-toguro, #barra-superior-actividades, .filas-actividades{
         overflow: hidden;
         grid-template-columns: 1fr;
         height: 100%;
     }
 
-    .filas-menu{
+    .filas-actividades{
         gap: 19%;
     }
 
-    .carta-platillo{
+    .carta-actividades{
         gap: 9%;
     }
 
-    #barra-superior-menu{
+    #barra-superior-actividades{
         height: 30%;
     }
 
-    #seccion-menu{
+    #seccion-actividades{
         height: 129%;
         overflow: hidden;
         grid-template-rows: 48fr 52fr;
     }
 
-    #contenedor-menu{
+    #contenedor-actividades{
         margin: 0 auto;
         overflow: scroll;
         height: 140%;
@@ -451,7 +450,7 @@ footer{
         top: -10%;
     }
 
-    #texto-menu{
+    #texto-actividades{
         height: 70%;
     }
 
@@ -470,31 +469,31 @@ footer{
         top: -22%;
     }
 
-    #contenedor-food{
+    #contenedor-pesa{
         position: relative;
         top: -50%;
         left: 4.6%;
     }
 
-    #imagen-food{
+    #imagen-pesa{
         width: 90%;
     }
 
-    #contenedor-chef{
+    #contenedor-toguro{
         width: 100%;
         position: relative;
         top: 119.07%;
         left: 4%;
     }
 
-    #texto-chef{
+    #texto-toguro{
         position: relative;
         top: -60%;
         left: 14%;
         width: 70%;
     }
 
-    #parrafo-chef{
+    #parrafo-toguro{
         font-size: 170%;
     }
 
