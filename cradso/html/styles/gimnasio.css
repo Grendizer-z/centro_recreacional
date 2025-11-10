@@ -101,6 +101,10 @@ a{
     background-color: #6e6e6e;
 }
 
+#caja-opciones-aside{
+    display: none;
+}
+
 li:hover #caja-opciones{
     visibility: visible;
 }
@@ -480,15 +484,15 @@ footer{
     }
 
     #contenedor-toguro{
-        width: 100%;
+        width: 96%;
         position: relative;
-        top: 119.07%;
-        left: 4%;
+        top: 46.87%;
+        left: 1%;
     }
 
     #texto-toguro{
         position: relative;
-        top: -60%;
+        top: -245%;
         left: 14%;
         width: 70%;
     }
