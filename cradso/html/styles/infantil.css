@@ -199,6 +199,11 @@ main{
     width: 100%;
 }
 
+#banner-guarderia-movil{
+    width: 100%;
+    display: none;
+}
+
 #texto-guarderia{
     width: 500px;
     color: rgb(255, 255, 255);
@@ -403,6 +408,14 @@ footer{
         font-size: 150%;
         position: relative;
         left: 862%;
+    }
+
+    #banner-guarderia{
+    display: none;
+    }
+
+    #banner-guarderia-movil{
+        display: block;
     }
 
     #botones-menu-lateral{
