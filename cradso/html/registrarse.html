@@ -1,90 +1,32 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>centro recreacional adso</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/registrarse.css">
-    </head>
-    <body>
-        <header>
-            <div id="logo-header">
-                <a href="../index.html"><img class="logo" src="../imagenes/Logo.png" alt="Logo"></a>
-            </div>
-            <div id="menu-header">
-                <ul id="lista-menu">
-                    <li><a class="links-nav" href="entradas.html">ENTRADAS</a></li>
-                    <li>
-                        <a class="links-nav" href="#servicios">SERVICIOS</a>
-                    <ul id="caja-opciones">
-                            <li><a href="seccion-infantil.html">niños</a></li>
-                            <li><a href="seccion-adolecentes.html">adolecentes</a></li>
-                            <li><a href="seccion-adultos.html">adultos</a></li>
-                            <li><a href="restaurante.html">restaurante</a></li>
-                            <li><a href="gimnasio.html">gimnasio</a></li>
-                        </ul></li>
-                    <li><a class="links-nav" href="https://www.google.com/maps/place/sena/@10.8955571,-72.8311197,17z/data=!3m1!4b1!4m6!3m5!1s0x8e8b0358baa9dbf5:0x9dbb29f802db2e51!8m2!3d10.8955571!4d-72.8285448!16s%2Fg%2F11j2g3nsdw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">UBICACIÓN</a></li>
-                </ul>
-            </div>
-            <div id="botones-header">
-                <input class="login-reg" type="button" value="REGISTRARSE">
-                <a href="login.html"><input class="login-reg" type="button" value="LOGIN"></a>
-            </div>
-        </header>
-        <main>
-            <div id="seccion-ban">
-                <img id="banner-login" src="imagenes/login.png">
-                <div id="contenedor-form">
-                    <form action="/" method="POST">
-                        <input type="text" class="campo" placeholder="Nombre" required>
-                        <input type="number" class="campo" placeholder="Edad" required>
-                        <input type="email" class="campo" placeholder="Email" required>
-                        <input type="password" class="campo" placeholder="Clave" required>
-                        <input type="password" id="confirmador" class="campo" placeholder="Confirmar clave" required>
-                        <input type="submit" id="boton-reg" class="campo" value="REGISTRARSE">
-                    </form>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div id="datos-footer">
-                <div class="dato-footer">
-                    <h3 class="titulo-dato">CONTACTOS</h3>
-                    <ul class="lista-datos">
-                        <li>Horario: Lunes a Viernes 8am - 5pm</li>
-                        <li>Email: direccion@example.com</li>
-                        <li>Tel: +57 123 456 7890</li>
-                        <li>Pol: En construcción</li>
-                    </ul>
-                </div>
-                <div class="separadordata-footer">.</div>
-                <div class="dato-footer">
-                    <h3 class="titulo-dato">MISION</h3>
-                    <ul class="lista-datos">
-                        <li>lo que nos mueve</li>
-                        <li>sostenibilidad</li>
-                        <li>quiénes somos</li>
-                        <li>compromiso</li>
-                    </ul>
-                </div>
-                <div class="separadordata-footer">.</div>
-                <div class="dato-footer">
-                    <h3 class="titulo-dato">FAQS</h3>
-                    <ul class="lista-datos">
-                        <li>comida y bebidas</li>
-                        <li>mascotas</li>
-                        <li>primeros auxilios</li>
-                        <li>atracciones</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="linea">.</div>
-            <div id="redes-sociales">
-                <div id="texto-redes"><h3 id="titulo-redes">Redes Sociales</h3></div>
-                <img id="redes-imagen" src="../imagenes/redes.png" alt="redes-sociales">
-                <img id="logo" src="../imagenes/Logo.png" alt="logo-footer">
-            </div>
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Centro Recreativo ADSO</title>
+    <link rel="stylesheet" href="styles/registrarse.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a> | <a href="login.html">Login</a>
+        </nav>
+        <h1>Registro de Usuario</h1>
+    </header>
+    <main>
+        <form id="form-registro">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Centro Recreativo ADSO. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/validacion.js"></script>
+</body>
 </html>

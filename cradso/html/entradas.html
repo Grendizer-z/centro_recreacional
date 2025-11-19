@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Entradas</title>
-        <link rel="stylesheet" href="styles/entradas.css">
-        <meta charset="UTF8">
-    </head>
-    <body>
-        <main>
-            <img id="fondo" src="imagenes/Entradas.png">
-            <div id="contenedor-form">
-                <a href="../index.html"><img src="../imagenes/Logo.png" id="Logo"></a>
-                <form action="{{route(pagar.post)}}" method="POST">
-                    <input type="number" class="widgets" id="adultos" placeholder="Adultos">
-                    <input type="number" class="widgets" id="infantes" placeholder="Niños">
-                    <input type="submit" class="widgets" id="pagar" value="PAGAR">
-                </form>
-            </div>
-        </main>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas - Centro Recreativo ADSO</title>
+    <link rel="stylesheet" href="styles/entradas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a> | <a href="login.html">Login</a>
+        </nav>
+        <h1>Comprar Entradas y Reservas</h1>
+    </header>
+    <main>
+        <section id="compra-entradas">
+            <h2>Selecciona tu Entrada</h2>
+            <form id="form-entradas">
+                <label for="tipo-entrada">Tipo de Entrada:</label>
+                <select id="tipo-entrada" required>
+                    <option value="">Selecciona</option>
+                    <option value="niños">Niños</option>
+                    <option value="adultos">Adultos</option>
+                </select>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" min="1" required>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" required>
+                <button type="submit">Comprar Entrada</button>
+            </form>
+        </section>
+        <section id="reservas">
+            <h2>Hacer Reserva</h2>
+            <p>Para reservas, inicia sesión primero.</p>
+            <form id="form-reservas">
+                <label for="actividad">Actividad:</label>
+                <select id="actividad" required>
+                    <option value="">Selecciona</option>
+                    <option value="kayak">Kayak</option>
+                    <option value="tenis">Tenis</option>
+                    <option value="cine">Cine</option>
+                    <!-- Más opciones según secciones -->
+                </select>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" required>
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Centro Recreativo ADSO. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/validacion.js"></script>
+</body>
 </html>

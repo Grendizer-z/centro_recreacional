@@ -440,6 +440,62 @@ footer{
     width: 100%;
 }
 
+/* Estilos base mejorados */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+    color: #333;
+}
+
+/* Header */
+header {
+    position: relative;
+    background: #007bff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navegación */
+.links-nav, .links-nav-aside {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.links-nav:hover, .links-nav-aside:hover {
+    color: #ffd700;
+}
+
+/* Main sections */
+.seccionban img {
+    width: 100%;
+    height: auto;
+}
+.seccion-demografica {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.caja-demo {
+    text-align: center;
+    margin: 10px;
+}
+.imagenes-demo {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
 @media (max-width: 480px){
 
     #botones-menu-lateral{

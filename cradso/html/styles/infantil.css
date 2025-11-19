@@ -418,6 +418,28 @@ footer{
         display: block;
     }
 
+    #texto-guarderia{
+        background-color: red;
+        width: 90%;
+        position: relative;
+        left: 0%;
+        top: -30%;
+    }
+
+    #titulo-guarderia{
+        width: 100%;
+        position: relative;
+        left: 0%;
+        font-size: 100%;
+    }
+
+    #parrafo-guarderia{
+        width: 100%;
+        position: relative;
+        left: 0%;
+        font-size: 100%;
+    }
+
     #botones-menu-lateral{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
