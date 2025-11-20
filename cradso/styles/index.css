@@ -520,6 +520,22 @@ footer {
         height: 100%;
     }
 
+    #seccion-evento{
+        overflow: hidden;
+
+    }
+
+    .seccionban img {
+        position: relative;
+        top: -60%
+    }
+
+    .seccion-demografica{
+        overflow: hidden;
+        position: relative;
+        top: -60%;
+    }
+
     #logo-header, #botones-header, .login-reg{
         display: none;
     }
@@ -583,9 +599,9 @@ footer {
     }
 
     #redes-imagen{
-        width: 50%;
+        width: 40%;
         position: relative;
-        left: 3%;
+        left: 8%;
     }
 
     #redes-sociales{
@@ -615,9 +631,11 @@ footer {
     }
 
     .imagenes-demo{
-        width: 138%;
-        height: 60%;
-        left: -19%;
+        width: 125%;
+        height: 260px;
+        position: relative;
+        left: -13%;
+        margin-top: -5%;
     }
 
     .caja-texto{
@@ -629,7 +647,7 @@ footer {
 
     .supcaja-demo{
         position: relative;
-        top: 60px;
+        top: 3px;
     }
 
     .texto-demo{
