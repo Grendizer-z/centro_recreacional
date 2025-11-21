@@ -1,9 +1,16 @@
-body{
-    background-color: black;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
     background-color: #282AB2;
     height: 110px;
     width: 100%;
@@ -11,725 +18,715 @@ header{
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
-#texto_logo{
+#texto_logo {
     display: none;
 }
 
-.aside-bar{
+.aside-bar {
     background-color: #333a8fee;
-    height: 100%;
+    height: 100vh;
     width: 80%;
+    max-width: 300px;
     position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 999;
 }
 
-#barra-lateral{
+#barra-lateral {
     display: none;
 }
 
-#elementos-menu{
+#check-menu {
+    display: none;
+}
+
+#elementos-menu {
     height: 110px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
-#logo-header{
-    margin: 0;
-    padding: 0;
-    width: 5%;
+#logo-header {
+    width: 80px;
+    min-width: 60px;
 }
 
-.logo{
+.logo {
     width: 100%;
     border-radius: 30%;
-    position: relative;
-    left: 20px;
 }
 
-#menu-header{
+#menu-header {
     display: flex;
     gap: 1em;
     align-items: center;
-    justify-content: space-around;
-    z-index: 1001;
+    justify-content: center;
+    flex: 1;
 }
 
-#lista-menu{
-    position: relative;
-    top: 10%;
+#lista-menu {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: row;
     gap: 1em;
+    align-items: center;
 }
 
-li{
+li {
     color: white;
     padding: 10px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.links-nav{
-    flex-grow: 1;
-    text-align: center;
     position: relative;
-    top: 46%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.links-nav {
     color: white;
     text-decoration: none;
     padding: 10px;
-    width: 3cm;
     font-weight: bold;
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
-#caja-opciones{
+#caja-opciones {
     visibility: hidden;
+    opacity: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 100%;
+    left: 0;
     list-style: none;
     background-color: #3c3ed1;
-    z-index: 1002;
-}
-
-#caja-opciones-aside{
-    display: none;
-}
-
-li:hover #caja-opciones{
-    visibility: visible;
-}
-
-#botones-header{
-    display: flex;
-    gap: 1em;
-    align-items: center;
-    justify-content: space-around;
-    margin: 11px;
-    z-index: 1001;
-}
-
-.login-reg, .login-reg-lateral{
-    display: flex;
-    gap: 1em;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    background-color: rgb(0, 128, 0);
     padding: 10px;
     border-radius: 5px;
-    font-family:'Lucida Sans';
-    font-size: 16px;
-    font-weight: bold;
-    width: 150px;
-    border: none;
-    height: 45px;
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
+    transition: opacity 0.3s ease;
+    min-width: 150px;
 }
 
-input{
-    text-decoration: none;
-}
-
-main{
-    background-color: aliceblue;
-}
-
-.seccionban{
-    display: grid;
-    position: relative;
-    top: 110px;
-    width: 100%;   
-    background-color: white;
-}
-
-.seccion-demografica{
-    background-color: #EEEFFA;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0em;
-}
-
-.supcaja-demo{
-    position: relative;
-    top: 10%;
-    width: 90%;
-}
-
-.imagenes-demo{
-    width: 91%;
-    left: 7%;
-}
-
-.caja-texto{
-    width: 91%;
-    position: relative;
-    left: 7%;
-}
-
-footer{
-    background-color: #282AB2;
-    height: 340px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#datos-footer{
-    color: white;
-    display: flex;
-    flex-direction: row;
-}
-
-.titulo-dato{
-    font-family: Arial;
-}
-
-.lista-datos{
+#caja-opciones-aside {
+    display: none;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.95em;
-    font-family: Arial;
+    padding-left: 20px;
 }
 
-.separadordata-footer{
-    width: 50px;
-    color: transparent;
+li:hover #caja-opciones {
+    visibility: visible;
+    opacity: 1;
 }
 
-#linea{
-    background-color: rgba(16, 11, 41, 0.137);
-    height: 100%;
-    width: 0.05%;
-    position: relative;
-    right: -6.5%;
-}
-
-#redes-sociales{
+#botones-header {
     display: flex;
     gap: 1em;
     align-items: center;
-    justify-content: space-around;
 }
 
-#titulo-redes{
-    position: relative;
-    right: -90%;
-    font-family: Arial;
+.login-reg, .login-reg-lateral {
     color: white;
+    background-color: rgb(0, 128, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans';
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 
-#logo{
-    position: relative;
-    left: -10%;
-    width: 12%;
-    margin: 0;
+.login-reg:hover, .login-reg-lateral:hover {
+    transform: scale(1.05);
 }
 
-#banner_centro{
+/* MAIN */
+main {
+    background-color: aliceblue;
+    margin-top: 110px;
+}
+
+.seccionban {
     width: 100%;
 }
 
-.caja-texto{
-    display: none;
-    text-align: center;
-    font-size: large;
-    background-color: #4CB34C;
-    height: -5%;
+#banner_centro {
+    width: 100%;
+    display: block;
 }
 
-.seccion-demografica{
+/* SECCIÓN DEMOGRÁFICA */
+.seccion-demografica {
     background-color: #EEEFFA;
-    height: 583px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 40px 20px;
+    min-height: 500px;
 }
 
-.texto-demo{
-    color: white;
-    padding: 3px;
-    font-weight: bold;
+.supcaja-demo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.caja-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.imagenes-demo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-demo:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(51, 54, 51, 0.5);
+}
+
+.caja-texto {
+    width: 100%;
+    text-align: center;
+    background-color: #4CB34C;
     border-radius: 15px;
-    font-size: 30px;
+    margin-top: 10px;
+}
+
+.texto-demo {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.supcaja-demo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 0.3%;
-}
-
-.caja-demo{
-    margin: 4em;
-    display: flex;
-    flex-direction: column;
-}
-
-.imagenes-demo{
-    margin: 0 auto;
-    position: relative;
-    bottom: -10%;
-    border-radius: 50%;
-}
-
-#ninos:hover{
-    transform: scale(1.02);
-    box-shadow: 0px 2px 15px rgba(51, 54, 51, 0.473);
-    border-width: 23px;
-}
-
-#ninos:active{
-    transform: scale(1);
-}
-
-#adult:hover{
-    transform: scale(1.02);
-    box-shadow: 0px 2px 15px rgba(51, 54, 51, 0.473);
-}
-
-#adult:active{
-    transform: scale(1);
-}
-
-#teen:hover{
-    transform: scale(1.02);
-    box-shadow: 0px 2px 15px rgba(51, 54, 51, 0.473);
-}
-
-#teen:active{
-    transform: scale(1);
-}
-
-.limite{
+.limite {
     color: transparent;
-    width: 5%;
+    width: 20px;
 }
 
-#imagen-restaurante{
+/* RESTAURANTE */
+#restaurante {
     width: 100%;
 }
 
-#seccion-eventos{
+#imagen-restaurante {
+    width: 100%;
+    display: block;
+}
+
+/* SECCIÓN EVENTOS */
+#seccion-eventos {
     background-color: #EEEFFA;
-    height: 583px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-#calendario{
-    position: relative;
-    left: 77px;
+#calendario {
     background-color: white;
     border: 2px solid black;
-    border-radius: 2%;
-    width: 35%;
-    height: 80%;
-    margin: 1em;
-    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
 }
 
-#header-calendario{
+#header-calendario {
     background-color: #3B21D0;
     color: white;
-    padding: 1em;
+    padding: 15px;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-#titulo-evento{
-    font-family: Arial;
-    height: 3%;
-}
-
-#titulo-calendario{
+#titulo-calendario {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
 }
 
-#dias-semana{
-    display: flex;
-    justify-content: space-around;
+#dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 2px solid black;
-    padding-bottom: 0.5em;
 }
 
-.dia-semana{
-    width: 2em;
+.dia-semana {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 16px;
     color: #3B21D0;
     font-weight: bold;
     font-family: 'Arial Black', Gadget, sans-serif;
-    text-transform: uppercase;
 }
 
-#dias-mes{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    justify-content: space-around;
+#dias-mes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
 }
 
-.dia-mes{
-    width: 3em;
-    height: 3em;
+.dia-mes {
+    aspect-ratio: 1;
     text-align: center;
-    line-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     cursor: pointer;
     font-family: 'Arial', sans-serif;
 }
 
-#caja-eventos{
-    margin: 0;
-    position: relative;
-    right: 100px;
+#caja-eventos {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
 }
 
-#header-eventos{
+#header-eventos {
     background-color: #3B21D0;
     color: white;
-    padding: 0.5em;
+    padding: 15px;
     text-align: center;
 }
 
-#fecha{
+#titulo-evento {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#fecha {
     background-color: #262f96;
-    padding: 1em;
+    padding: 15px;
     text-align: center;
 }
 
-#texto-fecha{
+#texto-fecha {
     font-family: Arial;
     color: white;
-    height: 10px;
+    font-size: 18px;
 }
 
-#imagen-gimnasio{
+#cuerpo-eventos {
+    padding: 20px;
+}
+
+#imagen-evento {
+    width: 100%;
+    display: block;
+}
+
+/* GIMNASIO */
+#gimnasio {
     width: 100%;
 }
 
-#imagen-mapa{
+#imagen-gimnasio {
+    width: 100%;
+    display: block;
+}
+
+/* MAPA */
+#mapa-seccion {
     width: 100%;
 }
 
-/* Estilos base mejorados */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
-    color: #333;
-}
-
-/* Header */
-header {
-    position: relative;
-    background: #007bff;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Navegación */
-.links-nav, .links-nav-aside {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-.links-nav:hover, .links-nav-aside:hover {
-    color: #ffd700;
-}
-
-/* Main sections */
-.seccionban img {
+#imagen-mapa {
     width: 100%;
-    height: auto;
+    display: block;
 }
-.seccion-demografica {
+
+/* FOOTER */
+footer {
+    background-color: #282AB2;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-}
-.caja-demo {
-    text-align: center;
-    margin: 10px;
-}
-.imagenes-demo {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-/* Footer */
-footer {
-    background: #333;
+#datos-footer {
     color: white;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 480px){
+.dato-footer {
+    min-width: 200px;
+}
 
-    #botones-menu-lateral{
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 8%;
-        position: relative;
-        top: 10px;
-        left: 25%;
-    }
-    
-    #texto_logo{
-        display: block;
-        width: 50%;
-        position: relative;
-        left: 28%;
+.titulo-dato {
+    font-family: Arial;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.lista-datos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial;
+}
+
+.dato {
+    font-size: 14px;
+}
+
+.separadordata-footer {
+    width: 20px;
+    color: transparent;
+}
+
+#linea {
+    background-color: rgba(78, 55, 206, 0.062);
+    height: 150px;
+    width: 2px;
+}
+
+#redes-sociales {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#texto-redes {
+    color: white;
+}
+
+#titulo-redes {
+    font-family: Arial;
+    color: white;
+    font-size: 18px;
+}
+
+#redes-imagen {
+    width: 150px;
+}
+
+#logo {
+    width: 80px;
+}
+
+/* ======================================= */
+/* RESPONSIVE TABLET (768px - 1023px) */
+/* ======================================= */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .links-nav {
+        font-size: 16px;
+        padding: 8px;
     }
 
-    .seccion-demografica, #seccion-eventos, footer{
+    .seccion-demografica {
+        padding: 30px 15px;
+    }
+
+    .texto-demo {
+        font-size: 20px;
+    }
+
+    #seccion-eventos {
         flex-direction: column;
-        height: 100%;
     }
 
-    #seccion-evento{
-        overflow: hidden;
-
+    #calendario, #caja-eventos {
+        max-width: 600px;
     }
 
-    .seccionban img {
-        position: relative;
-        top: -60%
+    #datos-footer {
+        justify-content: center;
     }
 
-    .seccion-demografica{
-        overflow: hidden;
-        position: relative;
-        top: -60%;
+    #linea {
+        display: none;
     }
+}
 
-    #logo-header, #botones-header, .login-reg{
+@media (max-width: 767px) {
+    /* Header móvil */
+    #elementos-menu {
         display: none;
     }
 
-    #elementos-menu{
-        display: none;
-    }
-
-    #lista-menu-aside{
-        list-style: none;
-    }
-
-    .links-nav{
-        font-size: 95%;
-    }
-
-    #ubicacion-aside{
-        position: relative;
-        top: -40px;
-    }
-
-    header{
-        height: 100px;
-    }
-
-    #calendario, #caja-eventos{
-        width: 80%;
-        height: 360px;
-        position: relative;
-        left: 0%;
-    }
-
-    #imagen-evento{
-        width: 100%;
-    }
-
-    #datos-footer{
-        width: 0%;
-        position: relative;
-        left: -54%;
-    }
-
-    .titulo-dato{
-        font-size: 110%;
-        position: relative;
-        left: 23%;
-    }
-
-    .dato{
-        font-size: 80%;
-        position: relative;
-        left: 20%;
-    }
-
-    #linea{
-        width: 100%;
-        height: 1px;
-        position: relative;
-        left: 0%;
-        padding: -100%;
-    }
-
-    #redes-imagen{
-        width: 40%;
-        position: relative;
-        left: 8%;
-    }
-
-    #redes-sociales{
-        position: relative;
-        left: -10%;
-    }
-
-    #titulo-redes{
-        font-size: 95%;
-        position: relative;
-        left: 44%;
-    }
-
-    #logo{
-        position: relative;
-        left: 5.7%;
-    }
-
-    #entradas-aside{
-        position: relative;
-    }
-
-    #service-aside{
-        cursor: pointer;
-        position: relative;
-        top: -30px;
-    }
-
-    .imagenes-demo{
-        width: 125%;
-        height: 260px;
-        position: relative;
-        left: -13%;
-        margin-top: -5%;
-    }
-
-    .caja-texto{
-        width: 146%;
-        height: 55px;
-        position: relative;
-        left: -24%;
-    }
-
-    .supcaja-demo{
-        position: relative;
-        top: 3px;
-    }
-
-    .texto-demo{
-        position: relative;
-        bottom: 40%;
-    }
-
-    .dia-mes{
-        font-size: 75.01%;
-    }
-
-    #header-calendario{
-        width: 97%;
-        height: 7%;
-        position: relative;
-        left: -4%;
-    }
-
-    #titulo-calendario{
-        position: relative;
-        top: -93%;
-    }
-
-    #barra-lateral{
+    #barra-lateral {
         display: block;
         position: fixed;
-        left: -5%;
-        top: 3%;
+        left: 10px;
+        top: 10px;
         z-index: 1002;
     }
 
-    #check-menu:checked ~ .aside-bar{
-        display: block;
+    .logo-lateral {
+        width: 50px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 5px;
     }
 
-    .logo-menu-lateral, .logo-lateral{
-        width: 17%;
+    #check-menu:checked ~ .aside-bar {
+        display: block;
+        animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .aside-bar {
+        display: none;
+    }
+
+    #lista-menu-aside {
+        list-style: none;
+        padding: 20px;
+    }
+
+    #lista-menu-aside li {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #logo-aside {
+        width: 80px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .links-nav-aside {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+
+    #check-service {
+        display: none;
+    }
+
+    #label-service {
         cursor: pointer;
     }
 
-    .aside-bar{
-        display: none;
-        z-index: 999;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+    #service-aside {
+        margin: 0;
     }
 
-    #lista-log-aside{
-        list-style: none;
-    }
-
-    #caja-opciones-aside{
-        list-style: none;
-        position: relative;
-        top: -40px;
-        left: 10%;
-    }
-
-    #check-service{
-        position: relative;
-        visibility: hidden;
-    }
-
-    #check-service:checked ~ #caja-opciones-aside{
+    #check-service:checked ~ #caja-opciones-aside {
         display: block;
+        animation: fadeIn 0.3s ease;
     }
 
-    .login-reg-lateral{
-        position: relative;
-        right: 30%;
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    #caja-opciones-aside {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    #caja-opciones-aside li {
+        padding: 8px 0;
+        border: none;
+    }
+
+    #botones-menu-lateral {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .login-reg-lateral {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #texto_logo {
+        display: block;
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    /* Sección demográfica móvil */
+    .seccion-demografica {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    .limite {
+        display: none;
+    }
+
+    .supcaja-demo {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .imagenes-demo {
+        max-width: 250px;
+    }
+
+    .texto-demo {
+        font-size: 22px;
+    }
+
+    /* Eventos móvil */
+    #seccion-eventos {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    #calendario, #caja-eventos {
+        max-width: 100%;
+    }
+
+    .dia-semana {
+        font-size: 14px;
+    }
+
+    .dia-mes {
+        font-size: 14px;
+    }
+
+    /* Footer móvil */
+    footer {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    #datos-footer {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .dato-footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .separadordata-footer {
+        display: none;
+    }
+
+    #linea {
         width: 80%;
-        font-size: 90%;
+        height: 2px;
     }
 
-    #logo-aside{
-        width: 50%;
-        position: relative;
-        left: 18%;
+    #redes-sociales {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .links-nav-aside{
-        position: relative;
-        left: 24%;
+    #titulo-redes {
+        font-size: 16px;
+    }
+
+    #redes-imagen {
+        width: 120px;
+    }
+
+    #logo {
+        width: 60px;
+    }
+}
+
+/* ======================================= */
+/* RESPONSIVE MÓVIL PEQUEÑO (hasta 480px) */
+/* ======================================= */
+@media (max-width: 480px) {
+    #texto_logo {
+        width: 120px;
+    }
+
+    .imagenes-demo {
+        max-width: 200px;
+    }
+
+    .texto-demo {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #titulo-calendario {
+        font-size: 20px;
+    }
+
+    .dia-semana {
+        font-size: 12px;
+    }
+
+    .dia-mes {
+        font-size: 12px;
+    }
+
+    .titulo-dato {
+        font-size: 18px;
+    }
+
+    .dato {
+        font-size: 13px;
     }
 }
